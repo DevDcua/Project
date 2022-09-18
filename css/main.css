@@ -19,8 +19,7 @@
 }
 
 .container-fluid button{
-    background-color: white;
-   
+    background-color: white;    
 }
 
     .container-fluid a p:hover{
@@ -44,6 +43,10 @@
     position: relative;
 
 }
+
+    .nav-item a:hover{
+        color: #F1F1F1;
+    }
 
     .nav-item a:after{
         content: '';
@@ -76,7 +79,7 @@
     height: 6em;
     width: auto;
     background-color: black;
-    box-shadow: 0 0 10px 0 white;
+    border-top: solid 2px #F1F1F1;
     justify-content: space-around;
     align-items: center;
     display: flex;
@@ -113,7 +116,7 @@
                 }
             }
 
-@media (max-width:425px){
+@media (max-width:768px){
     .footer{
         height: 10em;
         width: auto;
@@ -257,145 +260,58 @@
 
 .shop__title{
     font-family: 'Indie Flower', curisve;
-    font-size: 3em;
+    font-size: 6em;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
-    margin: 20px 0;
-}
-
-.carousel__container{
-    margin: 10px 10px;
-    padding: 10px 10px;
+    margin: 40px 0 0 0;
 }
 
 .carousel-item img{
-    object-fit: contain;
+    object-fit: cover;
     height: 50vh;
     align-content: center;
 }
 
+.carousel__container{
+    padding: 100px 00px;
+}
+
+.row div a img{
+    width: 100%;
+}
+
+.ropa__name{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.ropa__price{
+    font-family: 'Roboto', cursive;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: rgb(163, 163, 46);
+    margin-bottom: 30px;
+}
+
 @media (max-width: 768px){
     .carousel__container{
-        margin: 0px 0 0 0;
-        padding: 0;
+        padding: 50px 0px;
     }
-
-    .carousel-item img{
-        object-fit: contain;
-        height: 50vh;
+    .shop__title{
+        font-size: 4em;
     }
 }
 
-.container__tienda{
-    padding: 100px 200px;
-}
-
-.ropa__item{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    column-gap: 40px;
-    margin: 10px;
-}
-
-    .ropa__item .ropa__item-content{
-        padding-bottom: 100px;
-    }
-
-        .ropa__item-content a img{
-
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .ropa__item-content a img:hover{
-            filter: grayscale(1);
-        }
-
-        .ropa__item-content .ropa__name{
-            font-family: 'Indie Flower', cursive;
-            font-size: 25px;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: white;
-            padding-top: 20px;
-        }
-
-        .ropa__item-content .ropa__price{
-            font-family: 'Roboto', cursive;
-            font-size: 20px;
-            color: white;
-        }
-
-
-
-@media (max-width: 1100px){
-    .ropa__item{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center; 
-        margin: 10px;
-    }
-
-    .container__tienda{
-        margin: 0;
-        padding: 200px 40px;
-    }
-
-    .ropa__item-content a img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-    .ropa__item-content .ropa__name{
-        padding-top: 0;
-        margin: 0;
-    }
-
-    .ropa__item-content .ropa__price{
-        margin: 0;
+@media (max-width: 576px){
+    .shop__title{
+        font-size: 3em;
     }
 }
-
-@media (max-width: 768px){
-    .ropa__item{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-        margin: 0;
-    }
-
-    .container__tienda{
-        margin: 0;
-        padding: 0 0;
-    
-    }
-
-    .ropa__item-content a img{
-        width: 80%;
-        height: 80%;
-        object-fit: contain;
-    }
-    
-}
-
-@media (max-width: 425px){
-    .container__tienda{
-        margin: 0;
-        padding: 0 0 100px 0;
-    
-    }
-    .ropa__item-content a img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        padding-top: 20px;
-    }
-}
-
 /* FIN DE CSS SHOP */
 
 /* INICIA CSS MUSICA */
