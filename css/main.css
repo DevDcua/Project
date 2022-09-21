@@ -251,7 +251,7 @@
 
     #bg__home{
         background-image: url('../img/background-mobile.jpg');
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
