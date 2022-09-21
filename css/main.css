@@ -283,7 +283,7 @@
 }
 
 .ropa__name{
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Roboto', cursive;
     font-weight: 700;
     font-size: 1.5em;
     color: #ffffff;
@@ -292,7 +292,7 @@
 }
 
 .ropa__price{
-    font-family: 'Roboto', cursive;
+    font-family: 'Ultra', cursive;
     font-weight: 700;
     font-size: 1.2em;
     color: rgb(163, 163, 46);
