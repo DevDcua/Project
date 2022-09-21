@@ -5,8 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap')
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -160,7 +160,7 @@
 }
 
 .Heading__Inicio h1{
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', serif;
     font-size: 6em;
     font-size: 5;
     color: white;
@@ -208,21 +208,21 @@
     .table__contents .date, .venue{
         color: antiquewhite;
         text-transform: uppercase;
-        font-family: 'Roboto', cursive;
+        font-family: 'Roboto', serif;
         font-size: 20px;
     }
 
     .table__contents .city{
         color: rgb(160, 75, 75);
         text-transform: uppercase;
-        font-family: 'Indie Flowers', cursive;
+        font-family: 'Indie Flowers', serif;
         font-size: 20px;
     }
 
     .table__contents .link a{
         color: rgb(168, 196, 10);
         text-transform: uppercase;
-        font-family: 'Indie Flowers', cursive;
+        font-family: 'Indie Flowers', serif;
         font-size: 20px;
         text-decoration: none;
     }
@@ -260,7 +260,7 @@
 }
 
 .shop__title{
-    font-family: 'Indie Flower', curisve;
+    font-family: 'Indie Flower', serif;
     font-size: 6em;
     font-weight: 700;
     color: #ffffff;
@@ -283,7 +283,7 @@
 }
 
 .ropa__name{
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto', serif;
     font-weight: 700;
     font-size: 1.5em;
     color: #ffffff;
@@ -292,7 +292,7 @@
 }
 
 .ropa__price{
-    font-family: 'Ultra', cursive;
+    font-family: 'Ultra', serif;
     font-weight: 700;
     font-size: 1.2em;
     color: rgb(163, 163, 46);
@@ -343,7 +343,7 @@
     
 
 .musica__title{
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', serif;
     font-weight: 700;
     font-size: 5em;
     text-transform: uppercase;
@@ -352,7 +352,7 @@
 }
 
 .album__title{
-    font-family: 'Roboto', cursive;
+    font-family: 'Roboto', serif;
     font-weight: 700;
     font-size: 2.5em;
     color: #ffffff;
@@ -362,7 +362,7 @@
 }
 
 .album-content a p{
-    font-family: 'Ultra', cursive;
+    font-family: 'Ultra', serif;
     font-size: 1.5em;
     font-weight: 400;
     text-transform: uppercase;
