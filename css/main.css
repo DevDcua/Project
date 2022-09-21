@@ -251,7 +251,7 @@
 
     #bg__home{
         background-image: url('../img/background-mobile.jpg');
-        object-fit: fill;
+        object-fit: cover;
         background-position: center;
     }
 }
