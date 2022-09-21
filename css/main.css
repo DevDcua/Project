@@ -432,7 +432,111 @@
 }
 
 /* FIN DE CSS MUSICA */
-    
+
+#bg__galeria{
+    background: black;
+}
+
+.galeria__title h1{
+    font-family: 'Ultra', cursive;
+    font-weight: 500;
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+
+.galeria__container{
+    margin: 20px 5px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: repeat (4, 1fr);
+    grid-template-areas:
+    "Foto1"
+    "Foto2"
+    "Foto3"
+    "Foto4"
+    "Foto5"
+    "Foto6"
+    "Foto7"
+    "Foto8";
+
+}
+
+    .galeria__container div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .galeria__container div img:hover{
+        filter: grayscale(1);
+        cursor: pointer;
+    }
+
+.foto-1{
+    grid-area: Foto1;
+}
+
+.foto-2{
+    grid-area: Foto2;
+}
+
+.foto-3{
+    grid-area: Foto4;
+}
+
+.foto-4{
+    grid-area: Foto3;
+}
+
+.foto-5{
+    grid-area: Foto7;
+}
+
+.foto-6{
+    grid-area: Foto6;
+}
+
+.foto-7{
+    grid-area: Foto8;
+}
+
+.foto-8{
+    grid-area: Foto5;
+}
+
+@media (min-width:768px){
+    .galeria__container{
+        margin: 20px;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-rows: repeat (4, 300px);
+        grid-template-areas: 
+        "Foto1 Foto2"
+        "Foto1 Foto3"
+        "Foto1 Foto4"
+        "Foto5 Foto6"
+        "Foto7 Foto8";
+        
+    }
+}
+
+@media (min-width:1200px){
+    .galeria__container{
+        margin: 0 40px 40px 40px;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+        grid-template-areas: 
+        "Foto1 Foto2 Foto3"
+        "Foto1 Foto4 Foto3"
+        "Foto1 Foto5 Foto6"
+        "Foto7 Foto7 Foto8";
+    }
+}
+
 
 /* INICIA CSS GALERIA */
 
