@@ -19,6 +19,12 @@
     height: 6em;
 }
 
+#navbar-custom{
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 6em;
+}
+
 .container-fluid button{
     background-color: white;    
 }
@@ -143,15 +149,20 @@
 /* FINALIZA CSS DE FOOTER */
 
 /* CSS DE INICIO */
+.img__home-container{
+    width: auto;
+    height: 90vh;
+}
 
-#bg__home{
-    background-image: url('../img/background-1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+.img__home-desktop{
+    object-fit: cover;
     width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
+    height: 90vh;
+    object-position: center;
+}
+
+.img__home-mobile{
+    display: none;
 }
 
 .container__main--home{
@@ -249,11 +260,17 @@
         padding: 20px;
     }
 
-    #bg__home{
-        background-image: url('../img/background-mobile.jpg');
+/*     .img__home-desktop{
+        display: none;
+    } */
+
+/*     .img__home-mobile{
+        display: block;
+        height: 90vh;
+        width: 100%;
         object-fit: cover;
-        background-position: center;
-    }
+        background: black;
+    } */
 }
 
 /* FIN DE CSS INICIO */
