@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap')
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +38,7 @@
     color: rgb(226, 218, 218);
     font-family: 'Roboto', cursive;
     font-size: 1.5em;
+    text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
     position: relative;
@@ -80,11 +81,11 @@
     width: auto;
     background-color: black;
     border-top: solid 2px #F1F1F1;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 50px;
+    padding: 0 100px;
 }
     .footer .footer_text{
         font-family: 'DynaPuff', cursive;
@@ -113,6 +114,7 @@
                     height: 10em;
                     width: auto;
                     text-align: center;
+                    padding: 0 0;
                 }
             }
 
@@ -153,7 +155,6 @@
 
 .container__main--home{
     width: 100%;
-/*     background: linear-gradient(to bottom, black, rgb(26, 26, 26)); */
     background: black;
 }
 
@@ -248,15 +249,14 @@
     }
 }
 
-
 /* FIN DE CSS INICIO */
+
 
 /* INICIO CSS SHOP */
 
 #bg__shop{
     background: black;
 }
-
 
 .shop__title{
     font-family: 'Indie Flower', curisve;
@@ -277,7 +277,7 @@
     padding: 100px 00px;
 }
 
-.row div a img{
+.ropa__container div a img{
     width: 100%;
 }
 
@@ -320,9 +320,114 @@
     background: black;
 }
 
+.album__container{
+    padding: 100px 0px;
+}
 
+    .album__container .album-content a{
+        text-decoration: none;
+    }
+
+    .album__container .row div a img{
+        padding-bottom: 10px;
+        width: auto;
+        height: 50vh;
+    }
+
+    .album__container .row div iframe{
+        padding-bottom: 50px;
+        width: 90%;
+        height: 500px;
+    }
+    
+
+.musica__title{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    font-size: 5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 50px 0 20px 0;
+}
+
+.album__title{
+    font-family: 'Roboto', cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: underline double 1px #ffffff;
+    margin-bottom: 20px;
+}
+
+.album-content a p{
+    font-family: 'Ultra', cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 50px;
+
+}
+
+@media (max-width:992px){
+    .album__container{
+        padding: 100px 0px;
+    }
+    .album__container .row div iframe{
+        width: 90%;
+        height: 50vh;
+        padding: 20px 10px;
+    }
+
+    .album__container .row div a img{
+        object-fit: contain;
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .end__album{
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .album__container .row div iframe{
+        width: 100%;
+        height: 40vh;
+        padding: 0 10px;
+    }
+
+    .musica__title{
+        margin: 100px 0 0 0;
+    }
+}
+
+#row-custom-album{
+    padding: 0;
+    margin: 0;
+}
+
+#col-custom-album{
+    padding: 0;
+    margin: 0;
+}
+
+#col-custom-video{
+    padding: 0;
+    margin: 0;
+}
 
 /* FIN DE CSS MUSICA */
 
 
+/* INICIA CSS GALERIA */
 
+
+
+/* FIN DE CSS GALERIA */
+
+/* INICIA CSS CONTACTO */
+
+/* FIN DE CSS CONTACTO */
