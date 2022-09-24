@@ -148,6 +148,12 @@
 
 /* FINALIZA CSS DE FOOTER */
 
+/* BACKGROUND GENERAL */
+
+.bg__pages{
+    background: black;
+}
+
 /* CSS DE INICIO */
 .img__home-container{
     width: auto;
@@ -165,10 +171,7 @@
     display: none;
 }
 
-.container__main--home{
-    width: 100%;
-    background: black;
-}
+
 
 .Heading__Inicio h1{
     font-family: 'Indie Flower', serif;
@@ -266,10 +269,6 @@
 
 /* INICIO CSS SHOP */
 
-#bg__shop{
-    background: black;
-}
-
 .shop__title{
     font-family: 'Indie Flower', serif;
     font-size: 6em;
@@ -328,10 +327,6 @@
 
 /* INICIA CSS MUSICA */
 
-#bg__musica{
-    background: black;
-}
-
 .album__container{
     padding: 100px 0px;
 }
@@ -356,8 +351,7 @@
 .musica__title{
     font-family: 'Indie Flower', serif;
     font-weight: 700;
-    font-size: 5em;
-    text-transform: uppercase;
+    font-size: 6em;
     color: #ffffff;
     margin: 50px 0 20px 0;
 }
@@ -408,7 +402,7 @@
     .album__container .row div iframe{
         width: 100%;
         height: 40vh;
-        padding: 0 10px;
+        padding: 20px 10px;
     }
 
     .musica__title{
@@ -433,15 +427,15 @@
 
 /* FIN DE CSS MUSICA */
 
-#bg__galeria{
-    background: black;
-}
+
+
+/* INICIA CSS GALERIA */
+
 
 .galeria__title h1{
-    font-family: 'Ultra', cursive;
-    font-weight: 500;
-    font-size: 4em;
-    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 700;
+    font-size: 6em;
     color: #ffffff;
     padding: 50px 0 50px 0;
     text-align: center;
@@ -537,13 +531,83 @@
     }
 }
 
-
-/* INICIA CSS GALERIA */
-
-
-
 /* FIN DE CSS GALERIA */
 
 /* INICIA CSS CONTACTO */
+
+
+.contacto__container{
+    height: auto;
+    width: 100%;
+    padding: 100px;
+}
+
+#row-custom{
+    padding: 0;
+    margin: 0;
+}
+
+
+.btn-custom{
+    background: rgb(155, 65, 65);
+}
+
+.btn{
+    margin: 10px;
+}
+
+
+.contacto__left h1{
+    font-family: 'Indie Flower', serif;
+    font-weight: 700;
+    font-size: 6em;
+    color: #ffffff;   
+}
+
+.contacto__left p{
+    font-family: 'Roboto', serif;
+    font-size: 1.3em;
+    color: #ffffff;   
+}
+
+.contacto__left a{
+    text-decoration: none;
+    color: rgb(155, 65, 65);
+    font-family: 'Ultra', serif;
+    margin-bottom: ;
+}
+
+.contacto__right{
+    line-height: 50px;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    color: rgb(155, 65, 65);
+}
+
+    .contacto__right form input,
+    .contacto__right form textarea{
+        width: 100%;
+        padding: .8em;
+        border: none;
+        background: none;
+        outline: 0;
+        color: #fff;
+        border-bottom: 1px solid white ;
+    }
+
+::placeholder{
+    color:#ffffffc5;
+}
+
+@media (max-width:992px){
+    #col-custom{
+        padding-bottom: 100px;
+    }
+
+    .contacto__container{
+        padding: 50px 0px;
+    }
+}
 
 /* FIN DE CSS CONTACTO */

@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duki-Contacto</title>
+
+    <!-- LINKS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    
 </head>
-<body>
-    <header id="bg__contacto">
+<body class="bg__pages">
+
+    <!-- INICIO DE NAVBAR -->
+    <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a href="../index.html" class="navbar-brand"><p>DUKI</p></a>
@@ -40,8 +45,42 @@
         </nav>
     </header>
 
+    <!-- INICIO DE CONTENIDO -->
+    <main>
+        <div class="contacto__container">
+            <div class="row d-flex justify-content-center align-items-center" id="row-custom">
+                <div class="col-lg-6 col-sm-12 contacto__left" id="col-custom">
+                    <h1>Contacto</h1>
+                    <p>Por mayor información y contrataciones, contactarnos por este medio.</p>
+                    <a href="mailto:info@duki.com">info@duki.com</a>
+                </div>
+                <div class="col-lg-6 col-sm-12 contacto__right">
+                    <form action="mailto:info@duki.com" method="get" enctype="text/plain">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" placeholder="Tu nombre" id="nombre">
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="email" placeholder="Tu e-mail" id="email">
+                        </div>
+                        <div>
+                            <label for="numero">Tel</label>
+                            <input type="text" placeholder="Tu número" id="numero">
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea placeholder="Mensaje" id="mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Enviar!</button>
+                        <button type="reset" class="btn btn-custom">Borrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <!-- Inicio footer -->
+    <!-- INICIO DE FOOTER -->
     <footer class="footer">
         <div class="footer_text">
             <p>Sitio web sin fines de lucro <br>By Agustin Decuadro</p>           
