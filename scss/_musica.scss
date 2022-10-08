@@ -1,0 +1,122 @@
+/* COMIENZA MUSICA */
+.album__container{
+    padding: 100px 0px;
+
+    .row{
+             
+        .album__title{
+            font-family: $FontSecondary;
+            font-weight: 700;
+            font-size: $textXl;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: underline double 1px white;
+            margin-bottom: 20px;
+        }
+        
+        .album__link{
+            a{
+                text-decoration: none;
+
+                img{
+                    padding-bottom: 10px;
+                    width: auto;
+                    height: 50vh;
+                }
+                p{
+                    font-family: $FontTertiary;
+                    font-size: $textMd;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: white;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        .video__link{
+            
+            div{
+                
+                iframe{
+                    padding-bottom: 60px;
+                    width: 90%;
+                    height: 500px;
+                }
+            }
+        }
+    }
+
+    #row-custom-album{
+        padding: 0;
+        margin: 0;
+    }
+
+    #col-custom-album{
+        padding: 0;
+        margin: 0;
+    }
+
+    #col-custom-video{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width:992px){
+    .album__container{
+        .row{
+            .video__link{
+
+                div{
+                    iframe{
+                        width: 80%;
+                        height: 50vh;
+                        padding: 20px 10px;
+                    }
+                }
+                
+            }
+            .album__link{
+                
+                .end__album{
+                    padding-bottom: 50px;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .album__container{
+        
+        .row{
+            
+            .video__link{
+
+                div{
+
+                    iframe{
+                        width: 100%;
+                    }
+                }
+                
+            }
+
+            .album__link{
+                a{
+                    img{
+                        object-fit: contain;
+                        width: 100%;
+                        height: 40vh;
+                        padding: 0 10px;
+                    }
+                    p{
+                        margin-bottom: 30px;
+                    }
+                }                
+            }
+        }
+    }
+}
+/* FINALIZA MUSICA */

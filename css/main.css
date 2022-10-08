@@ -1,613 +1,464 @@
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-/* CSS NAVBAR */
-
-.navbar{
-    background-color: rgba(0, 0, 0, 0.35);
-    width: 100%;
-    height: 6em;
+body {
+  background-color: black;
 }
 
-#navbar-custom{
-    background-color: rgba(0, 0, 0, 1);
-    width: 100%;
-    height: 6em;
+/* Fonts Global */
+h1 {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 6em;
+  color: white;
+  padding: 100px 0 40px 0;
+  text-align: center;
+  font-weight: 700;
 }
 
-.container-fluid button{
-    background-color: white;    
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5em;
+    margin: 0;
+  }
 }
-
-    .container-fluid a p:hover{
-        transform: scale(1,1.2);
-    }
-
-.navbar-brand p{
-    font-family: 'Roboto', serif;
-    font-weight: 700;
+@media (max-width: 425px) {
+  h1 {
     font-size: 3em;
-    color: white;
-    margin: 0; 
+    padding: 50px 0 0 0;
+  }
+}
+/* COMIENZA NAVBAR */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 6em;
+}
+.navbar .container-fluid button {
+  background-color: white;
+}
+.navbar .container-fluid p:hover {
+  transform: scale(1, 1.2);
+}
+.navbar .navbar-brand p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: white;
+  margin: 0;
+}
+.navbar .nav-item a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.navbar .nav-item a:hover {
+  color: white;
+}
+.navbar .nav-item a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navbar .nav-item a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
-.nav-item a{
-    color: rgb(226, 218, 218);
-    font-family: 'Roboto', serif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-
+#navbar-custom {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 6em;
 }
 
-    .nav-item a:hover{
-        color: #F1F1F1;
-    }
-
-    .nav-item a:after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: white;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-    }
-
-    .nav-item a:hover:after{
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-
-@media (max-width: 991px){
-    .navbar-nav{
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 100%;
-    }
+@media (max-width: 991px) {
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+  }
 }
-/* FIN CSS NAVBAR */
+/* FINALIZA NAVBAR */
+/* COMIENZA FOOTER */
+.footer {
+  height: 6em;
+  width: auto;
+  background-color: black;
+  border-top: solid 2px white;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+.footer .footer_text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: white;
+}
+.footer .footer_logos ul {
+  padding: 0;
+  margin: 0;
+}
+.footer .footer_logos ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.footer .footer_logos img {
+  height: auto;
+  width: 2.5em;
+  border-radius: 50%;
+}
 
-/* INICIA CSS DE FOOTER */
-.footer{
-    height: 6em;
-    width: auto;
-    background-color: black;
-    border-top: solid 2px #F1F1F1;
-    justify-content: space-between;
-    align-items: center;
+@media (max-width: 768px) {
+  .footer {
+    height: 10em;
+    padding: 0 0;
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 100px;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .footer .footer_logos img {
+    width: 2em;
+  }
 }
-    .footer .footer_text{
-        font-family: 'DynaPuff', serif;
-        font-size: 1em;
-        color: #F1F1F1;
-    }
-
-        .footer div ul{
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer .footer_logos li{
-            display: inline-block;
-            padding: 0 10px;
-        }
-
-            .footer .footer_logos img{
-                height: auto;
-                width: 2.5em;
-                border-radius: 50%
-            }
-
-            @media (max-width:768px){
-                .footer{
-                    height: 10em;
-                    width: auto;
-                    text-align: center;
-                    padding: 0 0;
-                }
-            }
-
-@media (max-width:768px){
-    .footer{
-        height: 10em;
-        width: auto;
-        background-color: black;
-        text-align: center;
-
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .footer .footer_logos img{
-        height: auto;
-        width: 2em;
-        border-radius: 50%;
-    }
-
+/* FINALIZA FOOTER */
+/* COMIENZA HOME */
+.img__home--container img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
 }
 
-/* FINALIZA CSS DE FOOTER */
-
-/* BACKGROUND GENERAL */
-
-.bg__pages{
-    background: black;
+.container__main--home .table__shows {
+  padding: 20px 100px 50px 100px;
+  margin-bottom: 0;
+}
+.container__main--home .table__shows .table__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.container__main--home .table__shows .table__container .table__title {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+.container__main--home .table__shows .table__container .table__title .table__title--heading {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.container__main--home .table__shows .table__container .table__contents {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+  align-items: center;
+}
+.container__main--home .table__shows .table__container .table__contents .date, .container__main--home .table__shows .table__container .table__contents .venue {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.container__main--home .table__shows .table__container .table__contents .city {
+  color: rgb(160, 75, 75);
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.container__main--home .table__shows .table__container .table__contents .link a {
+  color: rgb(168, 196, 10);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
-/* CSS DE INICIO */
-.img__home-container{
-    width: auto;
-    height: 90vh;
+@media (max-width: 1100px) {
+  .container__main--home .table__shows {
+    padding: 20px 20px;
+  }
+  .container__main--home .table__shows .table__container .table__contents {
+    gap: 70px;
+  }
 }
-
-.img__home-desktop{
-    object-fit: cover;
-    width: 100%;
-    height: 90vh;
-    object-position: center;
-}
-
-.img__home-mobile{
+@media (max-width: 768px) {
+  .container__main--home .table__shows {
+    padding: 20px 0px;
+  }
+  .container__main--home .table__shows .table__container {
+    padding: 0 0;
+  }
+  .container__main--home .table__shows .table__container .table__title {
     display: none;
-}
-
-
-
-.Heading__Inicio h1{
-    font-family: 'Indie Flower', serif;
-    font-size: 6em;
-    font-size: 5;
-    color: white;
-    padding: 100px 0 40px 0;
+  }
+  .container__main--home .table__shows .table__container .table__contents {
+    grid-template-columns: 1fr;
+    justify-items: center;
     text-align: center;
-}
-
-.table__shows{
-    padding: 20px 200px 50px 200px;
-    margin-bottom: 0;
-}
-
-    .table__shows .table__container{
-        width: 100%;
-        margin: 0 auto;
-        max-width: 100%;
-        padding: 0 50px;
-    }
-
-.table__title{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ffffff;
-}
-
-    .table__title .table__title--heading{
-        color: #ffffff;
-        font-family: 'Roboto', serif;
-        font-weight: bolder;
-        font-size: 30px;
-        text-transform: uppercase;
-    }
-
-.table__contents{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ffffff;
-    align-items: center;
-}
-
-    .table__contents .date, .venue{
-        color: antiquewhite;
-        text-transform: uppercase;
-        font-family: 'Roboto', serif;
-        font-size: 20px;
-    }
-
-    .table__contents .city{
-        color: rgb(160, 75, 75);
-        text-transform: uppercase;
-        font-family: 'Indie Flowers', serif;
-        font-size: 20px;
-    }
-
-    .table__contents .link a{
-        color: rgb(168, 196, 10);
-        text-transform: uppercase;
-        font-family: 'Indie Flowers', serif;
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-@media (max-width: 1100px){
-    .table__shows{
-        padding: 20px 50px;
-    }
-}
-
-@media (max-width: 768px){
-    .table__shows{
-        padding: 20px 0;
-    }
-
-    .table__title{
-        display: none;
-    }
-
-    .table__contents{
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-}
-
-/* FIN DE CSS INICIO */
-
-
-/* INICIO CSS SHOP */
-
-.shop__title{
-    font-family: 'Indie Flower', serif;
-    font-size: 6em;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: center;
-    margin: 40px 0 0 0;
-}
-
-.carousel-item img{
-    object-fit: cover;
-    height: 50vh;
-    align-content: center;
-}
-
-.carousel__container{
-    padding: 100px 00px;
-}
-
-.ropa__container div a img{
-    width: 100%;
-}
-
-.ropa__name{
-    font-family: 'Roboto', serif;
-    font-weight: 700;
-    font-size: 1.5em;
-    color: #ffffff;
-    padding-top: 10px;
-    margin-bottom: 5px;
-}
-
-.ropa__price{
-    font-family: 'Ultra', serif;
-    font-weight: 700;
-    font-size: 1.2em;
-    color: rgb(163, 163, 46);
-    margin-bottom: 30px;
-}
-
-@media (max-width: 768px){
-    .carousel__container{
-        padding: 50px 0px;
-    }
-    .shop__title{
-        font-size: 4em;
-    }
-}
-
-@media (max-width: 576px){
-    .shop__title{
-        font-size: 3em;
-    }
-}
-/* FIN DE CSS SHOP */
-
-/* INICIA CSS MUSICA */
-
-.album__container{
-    padding: 100px 0px;
-}
-
-    .album__container .album-content a{
-        text-decoration: none;
-    }
-
-    .album__container .row div a img{
-        padding-bottom: 10px;
-        width: auto;
-        height: 50vh;
-    }
-
-    .album__container .row div iframe{
-        padding-bottom: 50px;
-        width: 90%;
-        height: 500px;
-    }
-    
-
-.musica__title{
-    font-family: 'Indie Flower', serif;
-    font-weight: 700;
-    font-size: 6em;
-    color: #ffffff;
-    margin: 50px 0 20px 0;
-}
-
-.album__title{
-    font-family: 'Roboto', serif;
-    font-weight: 700;
-    font-size: 2.5em;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: underline double 1px #ffffff;
-    margin-bottom: 20px;
-}
-
-.album-content a p{
-    font-family: 'Ultra', serif;
-    font-size: 1.5em;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 50px;
-
-}
-
-@media (max-width:992px){
-    .album__container{
-        padding: 100px 0px;
-    }
-    .album__container .row div iframe{
-        width: 90%;
-        height: 50vh;
-        padding: 20px 10px;
-    }
-
-    .album__container .row div a img{
-        object-fit: contain;
-        width: 100%;
-        padding: 0 10px;
-    }
-    
-    .end__album{
-        padding-bottom: 50px;
-    }
-    
-}
-
-@media (max-width: 600px){
-    .album__container .row div iframe{
-        width: 100%;
-        height: 40vh;
-        padding: 20px 10px;
-    }
-
-    .musica__title{
-        margin: 100px 0 0 0;
-    }
-}
-
-#row-custom-album{
-    padding: 0;
-    margin: 0;
-}
-
-#col-custom-album{
-    padding: 0;
-    margin: 0;
-}
-
-#col-custom-video{
-    padding: 0;
-    margin: 0;
-}
-
-/* FIN DE CSS MUSICA */
-
-
-
-/* INICIA CSS GALERIA */
-
-
-.galeria__title h1{
-    font-family: 'Indie Flower', cursive;
-    font-weight: 700;
-    font-size: 6em;
-    color: #ffffff;
-    padding: 50px 0 50px 0;
-    text-align: center;
-}
-
-
-.galeria__container{
-    margin: 20px 5px;
-    display: grid;
+    padding: 20px;
     gap: 20px;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat (4, 1fr);
-    grid-template-areas:
-    "Foto1"
-    "Foto2"
-    "Foto3"
-    "Foto4"
-    "Foto5"
-    "Foto6"
-    "Foto7"
-    "Foto8";
-
+    font-size: 1em;
+  }
+}
+/* FINALIZA HOME */
+/* COMIENZA SHOP */
+.main__container--shop .carousel__container {
+  padding: 100px 0px;
+}
+.main__container--shop .carousel__container .carousel-item img {
+  object-fit: cover;
+  height: 50vh;
+  align-content: center;
 }
 
-    .galeria__container div img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .galeria__container div img:hover{
-        filter: grayscale(1);
-        cursor: pointer;
-    }
-
-.foto-1{
-    grid-area: Foto1;
+.ropa__container div a img {
+  width: 100%;
+}
+.ropa__container .ropa__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: white;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+.ropa__container .ropa__price {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  color: rgb(163, 163, 46);
+  margin-bottom: 30px;
 }
 
-.foto-2{
-    grid-area: Foto2;
+@media (max-width: 768px) {
+  .carousel__container {
+    padding: 50px 0px;
+  }
+}
+/* FINALIZA SHOP */
+/* COMIENZA MUSICA */
+.album__container {
+  padding: 100px 0px;
+}
+.album__container .row .album__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: underline double 1px white;
+  margin-bottom: 20px;
+}
+.album__container .row .album__link a {
+  text-decoration: none;
+}
+.album__container .row .album__link a img {
+  padding-bottom: 10px;
+  width: auto;
+  height: 50vh;
+}
+.album__container .row .album__link a p {
+  font-family: "Ultra", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 50px;
+}
+.album__container .row .video__link div iframe {
+  padding-bottom: 60px;
+  width: 90%;
+  height: 500px;
+}
+.album__container #row-custom-album {
+  padding: 0;
+  margin: 0;
+}
+.album__container #col-custom-album {
+  padding: 0;
+  margin: 0;
+}
+.album__container #col-custom-video {
+  padding: 0;
+  margin: 0;
 }
 
-.foto-3{
-    grid-area: Foto4;
+@media (max-width: 992px) {
+  .album__container .row .video__link div iframe {
+    width: 80%;
+    height: 50vh;
+    padding: 20px 10px;
+  }
+  .album__container .row .album__link .end__album {
+    padding-bottom: 50px;
+  }
 }
-
-.foto-4{
-    grid-area: Foto3;
-}
-
-.foto-5{
-    grid-area: Foto7;
-}
-
-.foto-6{
-    grid-area: Foto6;
-}
-
-.foto-7{
-    grid-area: Foto8;
-}
-
-.foto-8{
-    grid-area: Foto5;
-}
-
-@media (min-width:768px){
-    .galeria__container{
-        margin: 20px;
-        grid-template-columns: repeat (2, 1fr);
-        grid-template-rows: repeat (4, 300px);
-        grid-template-areas: 
-        "Foto1 Foto2"
-        "Foto1 Foto3"
-        "Foto1 Foto4"
-        "Foto5 Foto6"
-        "Foto7 Foto8";
-        
-    }
-}
-
-@media (min-width:1200px){
-    .galeria__container{
-        margin: 0 40px 40px 40px;
-        grid-template-columns: repeat (3, 1fr);
-        grid-template-rows: repeat (3, 1fr);
-        grid-template-areas: 
-        "Foto1 Foto2 Foto3"
-        "Foto1 Foto4 Foto3"
-        "Foto1 Foto5 Foto6"
-        "Foto7 Foto7 Foto8";
-    }
-}
-
-/* FIN DE CSS GALERIA */
-
-/* INICIA CSS CONTACTO */
-
-
-.contacto__container{
-    height: auto;
+@media (max-width: 600px) {
+  .album__container .row .video__link div iframe {
     width: 100%;
-    padding: 100px;
+  }
+  .album__container .row .album__link a img {
+    object-fit: contain;
+    width: 100%;
+    height: 40vh;
+    padding: 0 10px;
+  }
+  .album__container .row .album__link a p {
+    margin-bottom: 30px;
+  }
+}
+/* FINALIZA MUSICA */
+/* COMIENZA GALERIA */
+.galeria__container {
+  margin: 20px 5px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat 3, 1fr;
+  grid-template-rows: repeat 4, 1fr;
+  grid-template-areas: "Foto1" "Foto2" "Foto3" "Foto4" "Foto5" "Foto6" "Foto7" "Foto8";
+}
+.galeria__container div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.galeria__container div img:hover {
+  filter: grayscale(1);
+  cursor: pointer;
+}
+.galeria__container .foto-1 {
+  grid-area: Foto1;
+}
+.galeria__container .foto-2 {
+  grid-area: Foto2;
+}
+.galeria__container .foto-3 {
+  grid-area: Foto4;
+}
+.galeria__container .foto-4 {
+  grid-area: Foto3;
+}
+.galeria__container .foto-5 {
+  grid-area: Foto7;
+}
+.galeria__container .foto-6 {
+  grid-area: Foto6;
+}
+.galeria__container .foto-7 {
+  grid-area: Foto8;
+}
+.galeria__container .foto-8 {
+  grid-area: Foto5;
 }
 
-#row-custom{
-    padding: 0;
-    margin: 0;
+@media (min-width: 768px) {
+  .galeria__container {
+    margin: 20px;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-rows: repeat 4, 300px;
+    grid-template-areas: "Foto1 Foto2" "Foto1 Foto3" "Foto1 Foto4" "Foto5 Foto6" "Foto7 Foto8";
+  }
+}
+@media (min-width: 1200px) {
+  .galeria__container {
+    margin: 0 40px 40px 40px;
+    grid-template-columns: repeat 3, 1fr;
+    grid-template-rows: repeat 3, 1fr;
+    grid-template-areas: "Foto1 Foto2 Foto3" "Foto1 Foto4 Foto3" "Foto1 Foto5 Foto6" "Foto7 Foto7 Foto8";
+  }
+}
+/* FINALIZA GALERIA */
+/* COMIENZA CONTACTO */
+.contacto__container {
+  height: auto;
+  width: 100%;
+  padding: 100px;
+}
+.contacto__container #row-custom {
+  padding: 0;
+  margin: 0;
+}
+.contacto__container #col-custom {
+  padding: 0;
+  margin: 0;
+}
+.contacto__container .contacto__right {
+  line-height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: rgb(155, 65, 65);
+}
+.contacto__container .contacto__right .btn-custom {
+  background-color: rgb(155, 65, 65);
+}
+.contacto__container .contacto__right .btn {
+  margin: 10px;
+}
+.contacto__container .contacto__right form input,
+.contacto__container .contacto__right form textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+.contacto__container .contacto__right ::placeholder {
+  color: rgba(255, 255, 255, 0.7725490196);
+}
+.contacto__container .contacto__left #contacto__title {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.contacto__container .contacto__left p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+.contacto__container .contacto__left a {
+  text-decoration: none;
+  color: rgb(155, 65, 65);
+  font-family: "Ultra", sans-serif;
 }
 
-
-.btn-custom{
-    background: rgb(155, 65, 65);
+@media (max-width: 992px) {
+  .contacto__container {
+    padding: 50px 20px;
+  }
+  .contacto__container #col-custom {
+    padding-bottom: 100px;
+  }
 }
+/* FINALIZA CONTACTO */
 
-.btn{
-    margin: 10px;
-}
-
-
-.contacto__left h1{
-    font-family: 'Indie Flower', serif;
-    font-weight: 700;
-    font-size: 6em;
-    color: #ffffff;   
-}
-
-.contacto__left p{
-    font-family: 'Roboto', serif;
-    font-size: 1.3em;
-    color: #ffffff;   
-}
-
-.contacto__left a{
-    text-decoration: none;
-    color: rgb(155, 65, 65);
-    font-family: 'Ultra', serif;
-    margin-bottom: ;
-}
-
-.contacto__right{
-    line-height: 50px;
-    font-family: 'Roboto', serif;
-    font-weight: 700;
-    font-size: 1.3em;
-    color: rgb(155, 65, 65);
-}
-
-    .contacto__right form input,
-    .contacto__right form textarea{
-        width: 100%;
-        padding: .8em;
-        border: none;
-        background: none;
-        outline: 0;
-        color: #fff;
-        border-bottom: 1px solid white ;
-    }
-
-::placeholder{
-    color:#ffffffc5;
-}
-
-@media (max-width:992px){
-    #col-custom{
-        padding-bottom: 100px;
-    }
-
-    .contacto__container{
-        padding: 50px 0px;
-    }
-}
-
-/* FIN DE CSS CONTACTO */
+/*# sourceMappingURL=main.css.map */

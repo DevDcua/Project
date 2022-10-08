@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+/* Fonts Global */
+
+h1{
+    font-family: $FontTitle;
+    font-size: $textXxxl;
+    color: white;
+    padding: 100px 0 40px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: $textXxll;
+        margin: 0;
+    }
+}
+
+@media (max-width: 425px){
+    h1{
+        font-size: $textXxl;
+        padding: 50px 0 0 0;
+    }
+}
+

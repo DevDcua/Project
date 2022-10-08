@@ -1,0 +1,84 @@
+/* COMIENZA CONTACTO */
+
+.contacto__container{
+
+    height: auto;
+    width: 100%;
+    padding: 100px;
+
+    #row-custom{
+        padding: 0;
+        margin: 0;
+    }
+
+    #col-custom{
+        padding: 0;
+        margin: 0;
+    }
+
+    .contacto__right{
+        line-height: 50px;
+        font-family: $FontSecondary;
+        font-weight: 700;
+        font-size: $textMd;
+        color: rgb(155, 65, 65);
+
+        .btn-custom{
+            background-color: rgb(155, 65, 65);
+        }
+        
+        .btn{
+            margin: 10px;
+        }
+
+        form input, 
+        form textarea{
+            width: 100%;
+            padding: .8em;
+            border: none;
+            background: none;
+            outline: 0;
+            color: #fff;
+            border-bottom: 1px solid white ;
+        }
+
+        ::placeholder{
+            color:#ffffffc5;
+        }
+    }
+
+    .contacto__left{
+
+        #contacto__title{
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        p{
+            font-family: $FontSecondary;
+            font-size: $textMd;
+            color: white; 
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(155, 65, 65);
+            font-family: $FontTertiary;
+        }
+    }
+    
+}
+
+@media (max-width:992px){
+
+    .contacto__container{
+        padding: 50px 20px;
+
+        #col-custom{
+            padding-bottom: 100px;
+        }
+    }
+}
+
+/* FINALIZA CONTACTO */
